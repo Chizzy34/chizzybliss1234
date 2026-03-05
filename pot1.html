@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Desktop Designer & Frontend Developer</title>
+  <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #222;
+  color: #fff;
+  padding: 2rem 1rem;
+  position: fixed;
+  height: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin: 1rem 0;
+}
+
+.sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+  color: #ff9800;
+}
+
+/* Main Content */
+main {
+  margin-left: 220px;
+  padding: 2rem;
+  flex: 1;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.hero {
+  background: #eee;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.skills-list li {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.project {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  background: #ff9800;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e68900;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  main {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <h1 class="logo">Chiboy</h1>
+    <nav>
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="intro" class="section hero">
+      <h2>Desktop Designer & Frontend Developer</h2>
+      <p>I design intuitive desktop interfaces and build responsive web solutions.</p>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        With a passion for clean design and efficient code, I create desktop
+        applications and modern websites that prioritize user experience.
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>UI/UX Design</li>
+        <li>Responsive Layouts</li>
+        <li>Desktop App Design</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Desktop Dashboard</h3>
+        <p>Wireframe and design for a productivity desktop app.</p>
+      </div>
+      <div class="project">
+        <h3>Frontend Portfolio</h3>
+        <p>A responsive portfolio showcasing my web development skills.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Interested in working together? Reach out via email.</p>
+      <a href="mailto:yourname@example.com" class="btn">Email Me</a>
+    </section>
+  </main>
+</body>
+</html>
