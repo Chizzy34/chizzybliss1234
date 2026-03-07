@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .dv1{
+            width: 20%;
+            height: 90rem ;
+            background-color: rgb(141, 63, 7);
+            position: absolute;
+            /* z-index: 5; */
+            font-size: 15px;
+            /* text-align: center; */
+            color: white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .but1{
+            margin-top: 45%;
+            position: absolute;
+            margin-left: 15%;
+            font-size: 1.3rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            color: white;
+            border: none;
+            background-color: transparent;
+        }
+          .but2{
+            margin-top: 65%;
+            position: absolute;
+            margin-left: 15%;
+            font-size: 1.3rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            color: white;
+            border: none;
+            background-color: transparent;
+        }
+          .but3{
+            margin-top: 85%;
+            position: absolute;
+            margin-left: 15%;
+            font-size: 1.3rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            color: white;
+            border: none;
+            background-color: transparent;
+        }
+        .dv2{
+            width: 65%;
+            height: 25%;
+            border-radius: 1rem;
+             background-color: antiquewhite;
+             position: absolute;
+             margin-left: 25%;
+        }
+        .about{
+            width: 67%;
+            height: 50%;
+            background-color: transparent;
+            position: absolute;
+            margin-top: 20%;
+            margin-left: 25%;
+            /* border: 2px black solid; */
+        }
+        body{
+            background-color: rgb(248, 248, 248) ;
+        }
+        .project{
+            width: 67%;
+            height: 45%;
+            /* border: 2px black solid; */
+            position: absolute;
+            z-index: 5;
+            margin-top: 55%;
+            margin-left: 25%;
+        }
+        .contact{
+            width: 67%;
+            height: 35%;
+            /* border: 2px black solid; */
+            z-index: 5;
+            position: absolute;
+            margin-top: 85%;
+            margin-left: 25%;
+        }
+        .btn{
+            text-decoration: none;
+            background-color: chocolate;
+            border-radius: 5px ;
+            font-size: 25px;
+            border: 2px chocolate solid;
+            color: white;
+            margin-top: 10%;
+            position: absolute;
+        }
+        .hh1{
+           margin-left: 6%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 35px;
+            position: absolute;
+        }
+        .hh2{
+            position: absolute;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            margin-top: 10%;
+            margin-left: 3%;
+        }
+        .hh3{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 35px;
+            position: absolute; 
+        }
+        .hh4{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 25px;
+            position: absolute;
+            margin-top: 11%;
+        }
+        .hh5{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 35px;
+            position: absolute;
+            margin-top: 30%;
+        }
+        .hh6{
+             margin-top: 38%;
+             font-size: 25px;
+             position: absolute;
+             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .hh7{
+           position: absolute;
+           font-size: 35px;
+           margin-top: 35px;
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .hh8{
+            margin-top: 12%;
+            position: absolute;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 25px;
+        }
+        .hh9{
+            position: absolute;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-top: 22%;
+            font-size: 25px;
+        }
+        .h12{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 35px;
+            margin-top: -5%;
+            position: absolute;
+        }
+        .h13{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 25px;
+            position: absolute;
+        }
+        .a1{
+            margin-top: 480%;
+            position: absolute;
+            margin-left: 20%;
+            font-size: 20px;
+            text-decoration: underline;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        @media (max-width: 1024px) {
+            .dv1{
+                font-size: 8px;
+                width: 30%;
+                position: absolute;
+                z-index: 5;
+                height: 67rem;
+            }
+            .but1{
+                font-size: 11px;
+                margin-top: 4.5rem;
+            }
+            .but2{
+                font-size: 11px;
+                margin-top: 6rem;
+            }
+            .but3{
+                font-size: 11px;
+                margin-top: 7.6rem;
+            }
+            .dv2{
+                    font-size: 5rem;
+                position: absolute;
+                width: 76%;
+                height: 28%;
+                margin-left: 35%;
+            }
+            .hh1{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 20px;
+                font-weight: bolder;
+            }
+            .hh2{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 15px;
+                font-weight: bold;
+                margin-top: 30%;
+            }
+            .hh3{
+                margin-top: 60%;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 21px;
+                font-weight: bolder;
+                margin-left: 21%;
+            }
+            .hh4{
+                font-size: 15px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin-top: 75%;
+                font-weight: bold;
+                margin-left: 20%;
+            }
+            .hh5{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: bolder;
+                font-size: 21px;
+                margin-top: 129%;
+                margin-left: 23%;
+            }
+            .hh6{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 145%;
+                margin-left: 21%;
+            }
+            .hh7{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 21px;
+                font-weight: bolder;
+                margin-top: 195%;
+                margin-left: 20%;
+            }
+            .hh8{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 210%;
+                margin-left: 20%;
+            }
+            .hh9{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 16px;
+                font-weight: bolder;
+                margin-top: 249%;
+                margin-left: 20%;
+            }
+            .h12{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 25px;
+                font-weight: bolder;
+                position: absolute;
+                margin-top: 248%;
+                margin-left: 20%;
+            }
+            .h13{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 16px;
+                margin-top: 267%;
+                margin-left: 20%;
+            }
+            .btn{
+                margin-top: 293%;
+                font-size: 17px;
+                margin-left: 20%;
+
+            }
+            .a1{
+                margin-top: 60rem;
+                font-size: 16px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+        }
+        @media (max-width:400) {
+            .dv1{
+                font-size: 10px;
+            }
+        }
+    </style>
+<body>
+    <div class="dv1">
+       <h1 style="margin-top: 20%;position:absolute;margin-left: 15%;">CHIZZY</h1>
+       <a href="#about"><button class="but1">ABOUT ME</button></a>
+       <a href="#project"><button class="but2">PROJECTS</button></a>
+       <a href="#contact"><button class="but3">CONTACT</button></a>
+       <a href="#" class="a1">BACK TO TOP</a>
+    </div>
+    <div class="dv2">
+       <h2 class="hh1">DESKTOP DESIGNER & FULL STACK DEVELOPER </h2>
+       <h3 class="hh2">THEME: A fusion of creativity and logic,where design aritistry meets technical precision.</h3>
+    </div>
+    <div id="about"  class="about">
+        <h3 class="hh3">ABOUT ME</h3>
+        <h4 class="hh4">it's about crafting interface that feels natural, beautiful and being fluent with all languages of technology, giving you freedom to create end-to-end solution.</h4>
+        <h3 class="hh5">SKILLS</h3>
+        <h4 class="hh6">The skills i aquire are HTML, CSS, JQUERY, JAVASCRIPT, MYSQL, PHP and also desktop designs like MSWORD, POWERPOINT, CORELDRAW, EXCEL, PAGEMARKER, PUBLISHERand ACCESS MIRCOSOFT DATABASE PROGRAM.</h4>
+    </div>
+    <div id="project" class="project">
+      <h2 class="hh7">PROJECTS</h2>
+      <h3 class="hh8">A modern design using desktop desgins to bulid for the productivity of applications.</h3>
+      <h3 class="hh9">A modern portfolio showcasing frontend end and backend development skills which can be of use.</h3>
+    </div>
+    <div id="contact" class="contact">
+       <h4 class="h12">CONTACTS</h4>
+      <h2 class="h13">Interested in working together? Reach out via email.</h2>
+      <a href="mailto:enechidubem33@gmail.com" class="btn">Email Me</a>
+    </div>
+</body>
+</html>
