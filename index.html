@@ -1,68 +1,251 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Desktop Designer & Frontend Developer</title>
-  <link rel="stylesheet" href="pot1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="1st.css"> -->
+     <style>
+        body{
+            background-color: rgb(223, 193, 155);
+        }
+        .hd1{
+            width: 99%;
+            height: 10%;
+            background-color: antiquewhite;
+            position: absolute;
+            z-index: 5                                                                                  ;
+        }
+        .h1{
+           background-color: transparent;
+           border: none;
+           position: absolute;
+           z-index: 5;
+           margin-left: 18%;
+           margin-top: 1.5%;
+           font-size: 1.4rem;
+           font-weight: bold; 
+        } 
+        .a1{
+           background-color: transparent;
+           border: none;
+           position: absolute;
+           z-index: 5;
+           margin-left: 30%;
+           margin-top: 1.5%;
+           font-size: 1.4rem;
+           font-weight: bold;  
+        }
+        .p1{
+           background-color: transparent;
+           border: none;
+           position: absolute;
+           z-index: 5;
+           margin-left: 43%;
+           margin-top: 1.5%;
+           font-size: 1.4rem;
+           font-weight: bold;  
+        }
+        .s1{
+           background-color: transparent;
+           border: none;
+           position: absolute;
+           z-index: 5;
+           margin-left: 63%;
+           margin-top: 1.5%;
+           font-size: 1.4rem;
+           font-weight: bold;   
+        }
+          .c1{
+           background-color: transparent;
+           border: none;
+           position: absolute;
+           z-index: 5;
+           margin-left: 82%;
+           margin-top: 1.5%;
+           font-size: 1.4rem;
+           font-weight: bold;   
+        }
+        .dv1{
+            width: 40%;
+            height: 45%;
+            position: absolute;
+            margin-top: 20%;
+            margin-left: 10%;
+        }
+        h2{
+           font-family:Arial, Helvetica, sans-serif;    
+           font-size: 2rem;
+           font-weight: bold;
+           position: absolute;
+           margin-top: -17%;
+        }
+        h3{
+           font-family:Arial, Helvetica, sans-serif;    
+           font-size: 2rem;
+           font-weight: bold;
+           position: absolute;
+           margin-top: 15%; 
+        }
+        .hh2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3rem;
+            font-weight: bold;
+            position: absolute;
+            z-index: 5;
+            margin-top: 40%;
+            margin-left: 8%;
+        }
+        .wed1{
+            width: 40%;
+            height: 65%;
+            position: absolute;
+            border-radius: 1rem;
+            margin-top: 70%;
+            margin-left: 4%;
+        }
+        .dv3{
+            width: 71%;
+            height: 65%;
+            position: absolute;
+            margin-top: 49%;
+            margin-left: 15%;
+        }
+        .hd2{
+            font-size: 2rem ;
+            position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .hh3{
+            width: 40%;
+            height: 65%;
+            position: absolute;
+            border-radius: 2rem;
+            margin-top: 110%;
+            margin-left: 4%;
+
+        }
+        .dv4{
+            width: 45%;
+            height: 55%;
+            position: absolute;
+            margin-top: 110%;
+            margin-left: 49%;
+        }
+          .hd3{
+              font-size: 2.35rem;
+            position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .a2{
+            position: absolute;
+            z-index: 5;
+            margin-top: 95%;
+            margin-left: 80%;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border: 2px white solid;
+            background-color: antiquewhite;
+            color: black;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .a3{
+            position: absolute;
+            z-index: 5;
+          margin-top: 95%;;
+            margin-left: 90%;
+            font-size: 1.3rem;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            background-color: transparent;
+           border: 2px white solid;
+            background-color: antiquewhite;
+            color: black;
+            font-weight: bold;
+        }
+        /* Responsive layout for tablets and mobile */
+@media (max-width: 768px) {
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+  }
+
+  header.hd1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+    height: auto;
+    position: relative;
+    padding: 10px;
+  }
+
+  header.hd1 button {
+    margin: 0;
+    position: relative;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .dv1, .dv3, .dv4 {
+    grid-column: 1 / -1;
+    width: 100% !important;
+    margin: 20px auto !important;
+    position: relative;
+  }
+
+  h2, h3, h1 {
+    font-size: 1.2rem !important;
+    margin: 10px 0 !important;
+    position: relative !important;
+  }
+
+  .a2, .a3 {
+    position: relative !important;
+    margin: 15px auto !important;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  header.hd1 {
+    grid-template-columns: 1fr;
+  }
+
+  header.hd1 button {
+    width: 100%;
+    text-align: center;
+  }
+
+  h2, h3, h1 {
+    font-size: 1rem !important;
+  }
+}
+
+     </style>
 </head>
 <body>
-  <aside class="sidebar">
-    <h1 class="logo">Chiboy</h1>
-    <nav>
-      <ul>
-        <li><a href="#intro">Intro</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </aside>
-
-  <main>
-    <section id="intro" class="section hero">
-      <h2>Desktop Designer & Frontend Developer</h2>
-      <p>I design intuitive desktop interfaces and build responsive web solutions.</p>
-    </section>
-
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>
-        With a passion for clean design and efficient code, I create desktop
-        applications and modern websites that prioritize user experience.
-      </p>
-    </section>
-
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>UI/UX Design</li>
-        <li>Responsive Layouts</li>
-        <li>Desktop App Design</li>
-      </ul>
-    </section>
-
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Desktop Dashboard</h3>
-        <p>Wireframe and design for a productivity desktop app.</p>
-      </div>
-      <div class="project">
-        <h3>Frontend Portfolio</h3>
-        <p>A responsive portfolio showcasing my web development skills.</p>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Interested in working together? Reach out via email.</p>
-      <a href="mailto:yourname@example.com" class="btn">Email Me</a>
-    </section>
-  </main>
+    <header class="hd1">
+       <button class="h1"><a href="#home" style="text-decoration: none;color: black;">HOME</a></button>
+       <button class="a1"><a href="index1.html" style="text-decoration: none;color: black;">ABOUT</a></button>
+       <button class="p1"><a href="index2.html" style="text-decoration: none;color: black;">CASE-STUDY</a></button>
+       <button class="s1"><a href="index3.html" style="text-decoration: none;color: black;">SERVICE-PAGE</a></button>
+       <button class="c1"><a href="index3.html" style="text-decoration: none;color: black;">CONTACT-PAGE</a></button>
+    </header>
+    <div class="dv1">
+       <h2>Hello, I'm John - guiding growth and strategy</h2>
+       <h3>John, consultant for sustainable solutions</h3>
+    </div>
+   <h2 class="hh2">MY SPECIALTY</h2>
+   <!-- <img src="./image/wedding.jpg" alt="My photo" class="wed1"> -->
+   <div class="dv3">
+     <h1 class="hd2"><em>"I'm a consultant who believes every chanllege, idea and breakthrough deserves thoughtful attention.My approach is strategic yet adaptable,blending analytical problem-solving with clear communication to help individuals and organizations achieve sustainable growth. I focus on uncovering opportunities,simplipying complexity and guiding clients toward decisions that create lasting impact."</em></h1>
+   </div>
+   <a href="#" class="a2">Back to top</a>
+  <a href="index1.html" class="a3">Next</a>
 </body>
 </html>

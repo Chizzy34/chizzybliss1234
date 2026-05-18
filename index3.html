@@ -1,0 +1,257 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(223, 193, 155);
+        }
+
+        .hd1 {
+            width: 99%;
+            height: 10%;
+            background-color: antiquewhite;
+            position: absolute;
+            z-index: 5;
+        }
+
+        .h1 {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            z-index: 5;
+            margin-left: 18%;
+            margin-top: 1.5%;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .a1 {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            z-index: 5;
+            margin-left: 30%;
+            margin-top: 1.5%;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .p1 {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            z-index: 5;
+            margin-left: 43%;
+            margin-top: 1.5%;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .s1 {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            z-index: 5;
+            margin-left: 63%;
+            margin-top: 1.5%;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .c1 {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            z-index: 5;
+            margin-left: 82%;
+            margin-top: 1.5%;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .hh2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 3rem;
+            position: absolute;
+            margin-top: 7%;
+            margin-left: 20%;
+        }
+
+        .dv1 {
+            width: 90%;
+            height: 246%;
+            position: absolute;
+            margin-top: 14%;
+            margin-left: 10%;
+        }
+
+        .hd2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+            font-style: bold;
+        }
+
+        .a2 {
+            position: absolute;
+            z-index: 5;
+            margin-top: 110%;
+            margin-left: 80%;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border: 2px white solid;
+            background-color: antiquewhite;
+            color: black;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .a3 {
+            position: absolute;
+            z-index: 5;
+            margin-top: 110%;
+            margin-left: 90%;
+            font-size: 1.3rem;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            background-color: transparent;
+            border: 2px white solid;
+            background-color: antiquewhite;
+            color: black;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .hd1 {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+            }
+
+            .h1,
+            .a1,
+            .p1,
+            .s1,
+            .c1 {
+                position: relative;
+                margin: 5px 0;
+                font-size: 1.2rem;
+            }
+
+            .hh2 {
+                font-size: 2rem;
+                margin-top: 20%;
+                margin-left: 5%;
+                text-align: center;
+            }
+
+            .dv1 {
+                width: 95%;
+                height: auto;
+                margin-top: 30%;
+                margin-left: 2.5%;
+            }
+
+            .hd2 {
+                font-size: 1.4rem;
+                line-height: 1.6;
+            }
+
+            .a2,
+            .a3 {
+                position: relative;
+                margin: 20px auto;
+                display: block;
+                text-align: center;
+                font-size: 1rem;
+            }
+        }
+
+        /* ✅ New media query added cleanly below */
+        @media (max-width: 480px) {
+            .hh2 {
+                font-size: 1.6rem;
+                margin-top: 15%;
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .hd2 {
+                font-size: 1.2rem;
+                line-height: 1.4;
+                position: relative;
+            }
+
+            .dv1 {
+                width: 100%;
+                margin-top: 35%;
+                margin-left: 0;
+                padding: 0 10px;
+            }
+
+            .h1,
+            .a1,
+            .p1,
+            .s1,
+            .c1 {
+                font-size: 1rem;
+                margin: 8px ;
+                position: relative;
+            }
+
+            .a2{
+                font-size: 0.9rem;
+                width: 25%;
+                margin-top: 467%;
+                position: absolute;
+                margin-left: 5%;
+            }
+            .a3{
+                font-size: 0.9rem;
+                width: 20%;
+                margin-top: 467%;
+                position: absolute;
+                margin-left: 35%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hd1">
+        <button class="h1"><a href="index.html" style="text-decoration: none;color: black;">HOME</a></button>
+        <button class="a1"><a href="index1.html" style="text-decoration: none;color: black;">ABOUT</a></button>
+        <button class="p1"><a href="index2.html" style="text-decoration: none;color: black;">CASE-STUDY</a></button>
+        <button class="s1"><a href="#service-page" style="text-decoration: none;color: black;">SERVICE-PAGE</a></button>
+        <button class="c1"><a href="index4.html" style="text-decoration: none;color: black;">CONTACT-PAGE</a></button>
+    </header>
+    <h1 class="hh2">📑 Consultant Services Structure</h1>
+    <div class="dv1">
+        <h1 class="hd2">"
+            Business Strategy Consulting  
+            Helping organizations define clear goals, align resources, and create actionable plans. I focus on identifying growth opportunities, streamlining operations, and building sustainable strategies that drive measurable results. <br> <br>
+            Testimonial: “Working with Alison transformed our business direction. His strategic insights gave us clarity and confidence to expand into new markets.” — CEO, Retail Company.
+            <br> <br>
+            Marketing & Branding  
+            Crafting compelling brand identities and marketing strategies that resonate with target audiences. I help businesses strengthen their positioning, improve customer engagement, and build lasting brand loyalty. <br> <br>
+            Testimonial: “Our brand finally speaks to our customers. The marketing plan James designed boosted our visibility and doubled our engagement.” — Marketing Director, Tech Startup.
+            <br> <br>
+            IT & Digital Transformation  
+            Guiding organizations through digital adoption — from modernizing IT infrastructure to integrating new technologies. I ensure smooth transitions that enhance efficiency, security, and innovation. <br> <br>
+            Testimonial: “David helped us embrace digital tools without disrupting our workflow. We’re now more agile and competitive in our industry.” — Operations Manager, Manufacturing Firm.
+            <br> <br>
+            Leadership Coaching  
+            Empowering leaders to grow their skills, improve decision‑making, and inspire their teams. My coaching focuses on self‑awareness, communication, and resilience to build confident, effective leadership. <br> <br>
+            Testimonial: “His coaching sessions reshaped how I lead my team. I’ve become more confident, empathetic, and results‑driven.” — Senior Manager, Financial Services.🎨"
+        </h1>
+    </div>
+    <a href="#" class="a2">Back to top</a>
+    <a href="index4.html" class="a3">Next</a>
+</body>
+
+</html>
